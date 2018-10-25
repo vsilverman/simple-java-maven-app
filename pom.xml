@@ -19,6 +19,25 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>4.0.0</version>
+      <scope>test</scope>
+    </dependency>
+      <!-- In case of using testNG use the following -->
+      <!-- dependency>
+          <groupId>org.testng</groupId>
+          <artifactId>testng</artifactId>
+          <version>6.14.2</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>io.cucumber</groupId>
+          <artifactId>cucumber-testng</artifactId>
+          <version>4.0.0</version>
+          <scope>test</scope>
+      </dependency -->
   </dependencies>
   <build>
     <plugins>
