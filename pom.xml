@@ -13,6 +13,17 @@
   </properties>
   <dependencies>
     <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.11.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>4.0.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <!-- version>3.8.1</version -->
@@ -25,7 +36,7 @@
       <version>4.0.0</version>
       <scope>test</scope>
     </dependency>
-      <!-- In case of using testNG use the following -->
+      <!-- In case of using testNG uncomment the following dependency -->
       <!-- dependency>
           <groupId>org.testng</groupId>
           <artifactId>testng</artifactId>
