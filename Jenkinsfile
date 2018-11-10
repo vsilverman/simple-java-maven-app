@@ -21,6 +21,17 @@ pipeline {
                 }
             }
         }
+        stage('Publish for development') {
+            when {
+                branch 'development'
+            }
+            steps {
+                // sh 'npm install'
+                //  sh './jenkins/scripts/deliver.sh'
+                input message: 'Finished using the web site? (Click "Proceed" to continue)'
+                //  sh './jenkins/scripts/kill.sh'
+            }
+        }
         stage('Deliver') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
@@ -33,7 +44,7 @@ pipeline {
               }
             }
             steps {
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                echo "Build ${env.BUILD_ID} on ${env.JENKINS_URL} is ready for Demo"
             }
         }
     }
