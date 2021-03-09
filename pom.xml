@@ -33,7 +33,7 @@
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-junit</artifactId>
-      <version>4.0.0</version>
+      <version>6.10.1</version>
       <scope>test</scope>
     </dependency>
       <!-- In case of using testNG uncomment the following dependency -->
